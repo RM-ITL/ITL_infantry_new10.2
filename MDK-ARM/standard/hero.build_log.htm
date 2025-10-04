@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a adim, a, LIC=FYKYW-Q2HW5-WFJI7-EG0F7-2NW0R-SBAXS
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\RoboMaster\RM_ITL_Infantry_³¬µç°æ\RM_ITL_Infantry_³¬µç°æ10.2\MDK-ARM\hero.uvprojx
+Project File Date:  08/11/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'hero'
+compiling gimbal_behaviour.c...
+..\application\gimbal_behaviour.c(415): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			  xishu1=
+AW_MOUSE_SEN/3.5;
+..\application\gimbal_behaviour.c(416): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				xishu2=
+ITCH_MOUSE_SEN/3.0;
+..\application\gimbal_behaviour.c(568): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+       {gimbal_control.gimbal_yaw_motor.absolute_angle_set = anglex + 
+I*3.0/2;}
+..\application\gimbal_behaviour.c(461): warning:  #177-D: variable "wk"  was declared but never referenced
+  		int wk=1;
+..\application\gimbal_behaviour.c(462): warning:  #177-D: variable "sage"  was declared but never referenced
+  		int sage=1;
+..\application\gimbal_behaviour.c(768): warning:  #1-D: last line of file ends without a newline
+  }
+..\application\gimbal_behaviour.c(396): warning:  #177-D: variable "Turn"  was declared but never referenced
+  static int Turn=0;
+..\application\gimbal_behaviour.c: 7 warnings, 0 errors
+compiling chassis_behaviour.c...
+..\application\chassis_behaviour.c(290): warning:  #177-D: variable "sin_yaw"  was declared but never referenced
+    float sin_yaw = 0.0f, cos_yaw = 0.0f;
+..\application\chassis_behaviour.c(290): warning:  #177-D: variable "cos_yaw"  was declared but never referenced
+    float sin_yaw = 0.0f, cos_yaw = 0.0f;
+..\application\chassis_behaviour.c(291): warning:  #177-D: variable "xishu"  was declared but never referenced
+  	int xishu=0;
+..\application\chassis_behaviour.c(335): warning:  #177-D: variable "angle_set"  was declared but never referenced
+    float vx_set = 0.0f, vy_set = 0.0f, angle_set = 0.0f;
+..\application\chassis_behaviour.c(339): warning:  #177-D: variable "sin_yaw"  was declared but never referenced
+    float sin_yaw = 0.0f, cos_yaw = 0.0f;
+..\application\chassis_behaviour.c(339): warning:  #177-D: variable "cos_yaw"  was declared but never referenced
+    float sin_yaw = 0.0f, cos_yaw = 0.0f;
+..\application\chassis_behaviour.c(526): warning:  #1-D: last line of file ends without a newline
+  ////}
+..\application\chassis_behaviour.c: 7 warnings, 0 errors
+compiling CAN_receive.c...
+..\application\CAN_receive.c(134): warning:  #111-D: statement is unreachable
+        break;
+..\application\CAN_receive.c: 1 warning, 0 errors
+compiling chassis_power_control.c...
+compiling shoot_task.c...
+..\Task\shoot_task.c(120): warning:  #1295-D: Deprecated declaration servo_init - give arg types
+  static void servo_init();
+..\Task\shoot_task.c(354): warning:  #223-D: function "get_shoot_heat0_limit_and_heat0_17" declared implicitly
+      get_shoot_heat0_limit_and_heat0_17(&shoot_control.heat_limit, &shoot_control.heat);
+..\Task\shoot_task.c(893): warning:  #1-D: last line of file ends without a newline
+  }
+..\Task\shoot_task.c(141): warning:  #550-D: variable "shoot_block"  was set but never used
+  static int shoot_block;
+..\Task\shoot_task.c(143): warning:  #550-D: variable "move_flag"  was set but never used
+  static uint8_t move_flag = 0;
+..\Task\shoot_task.c(304): warning:  #177-D: variable "kadan_flag"  was declared but never referenced
+  static int kadan_flag;
+..\Task\shoot_task.c(581): warning:  #177-D: variable "wk11"  was declared but never referenced
+  static int wk11;
+..\Task\shoot_task.c(872): warning:  #177-D: function "bullet_one"  was declared but never referenced
+  static void bullet_one()
+..\Task\shoot_task.c: 8 warnings, 0 errors
+compiling freertos.c...
+..\User\Src\freertos.c(184): warning:  #1-D: last line of file ends without a newline
+  /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+..\User\Src\freertos.c: 1 warning, 0 errors
+compiling main.c...
+compiling referee_usart_task.c...
+compiling USART_receive.c...
+compiling chassis_task.c...
+..\Task\chassis_task.c(268): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+     if(chassis_move.vx_set<0.1||chassis_move.vx_set>-0.1)
+..\Task\chassis_task.c(270): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        if(chassis_move.vy_set>0.5||chassis_move.vy_set<-0.5)
+..\Task\chassis_task.c(408): warning:  #1-D: last line of file ends without a newline
+  }
+..\Task\chassis_task.c: 3 warnings, 0 errors
+compiling gimbal_task.c...
+..\Task\gimbal_task.c(237): warning:  #177-D: variable "f1"  was declared but never referenced
+  		float f1=gimbal_control.gimbal_pitch_motor.absolute_angle;
+..\Task\gimbal_task.c(238): warning:  #177-D: variable "f2"  was declared but never referenced
+  		float f2=gimbal_control.gimbal_pitch_motor.absolute_angle_set;
+..\Task\gimbal_task.c(423): warning:  #177-D: function "gimbal_relative_angle_limit"  was declared but never referenced
+  static void gimbal_relative_angle_limit(gimbal_motor_t *gimbal_motor, float add)
+..\Task\gimbal_task.c(512): warning:  #177-D: function "gimbal_motor_relative_angle_control"  was declared but never referenced
+  static void gimbal_motor_relative_angle_control(gimbal_motor_t *gimbal_motor)
+..\Task\gimbal_task.c: 4 warnings, 0 errors
+compiling custom_ui_draw.c...
+linking...
+Program Size: Code=87564 RO-data=3964 RW-data=1092 ZI-data=42596  
+FromELF: creating hex file...
+".\standard\hero.axf" - 0 Error(s), 31 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_hero
+  D:\Keil5\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

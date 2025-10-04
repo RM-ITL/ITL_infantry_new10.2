@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "custom_ui_draw.h": "c",
+        "chassis_task.h": "c",
+        "limits": "c",
+        "memory": "c",
+        "cmsis_os.h": "c",
+        "gimbal_behaviour.h": "c",
+        "arm_math.h": "c",
+        "gimbal_task.h": "c",
+        "chassis_behaviour.h": "c",
+        "can_receive.h": "c",
+        "referee.h": "c",
+        "referee_usart_task.h": "c"
+    }
+}
